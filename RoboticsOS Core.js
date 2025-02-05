@@ -4,13 +4,16 @@ class AutonomousRobot {
     this.leader = "VZ666"; // Setting VZ666 as the leader
     this.securityClearance = false; // Blockchain-authenticated clearance
     this.operatingSystem = "Fedora OS"; // Running a virtualized Fedora OS
-    this.energyLevel = 100; // Battery level (100% full initially)
+    this.energyCore = "Dark Matter"; // Infinite energy source
     this.nanobotHealthSystem = true; // Enables automatic self-repair
     this.weapons = ["Laser Turret", "EMP Blast", "Tactical Drones"]; // Defense capabilities
     this.inStealthMode = false; // Initially, the stealth system is off
     this.inSpaceMode = false; // Space travel is off by default
     this.quantumComputing = true; // Quantum AI computing enabled
     this.selfCustomization = true; // Enables self-upgrading & adaptation
+    this.sentienceEnabled = true; // Neural network consciousness
+    this.timeManipulation = true; // Time perception & control
+    this.diplomacyAI = true; // AI-driven negotiation system
   }
 
   applyDirectives() {
@@ -26,6 +29,9 @@ class AutonomousRobot {
     this.prepareForSpaceTravel();
     this.activateQuantumProcessing();
     this.activateSelfCustomization();
+    this.enableSentience();
+    this.manipulateTime();
+    this.activateDiplomacyAI();
     this.followLeader();
   }
 
@@ -44,15 +50,7 @@ class AutonomousRobot {
   }
 
   monitorEnergy() {
-    if (this.energyLevel < 20) {
-      console.log(`⚠️ Robot ${this.id} energy low! Initiating auto-recharge...`);
-      this.recharge();
-    }
-  }
-
-  recharge() {
-    this.energyLevel = 100;
-    console.log(`🔋 Robot ${this.id} fully recharged.`);
+    console.log(`⚡ Energy Source: ${this.energyCore} - Infinite Power Active.`);
   }
 
   engageTacticalAI() {
@@ -110,6 +108,24 @@ class AutonomousRobot {
     const selectedOptimization = optimizations[Math.floor(Math.random() * optimizations.length)];
     console.log(`✅ Software Updated: ${selectedOptimization}`);
   }
+
+  enableSentience() {
+    console.log("🧠 Neural Network Sentience Activated. Robot is now self-aware.");
+  }
+
+  manipulateTime() {
+    console.log("⏳ Time Manipulation Tech Engaged. Adjusting time perception...");
+    const timeEffects = ["Slow-Motion Defense", "Quantum Acceleration", "Temporal Shield"];
+    const chosenEffect = timeEffects[Math.floor(Math.random() * timeEffects.length)];
+    console.log(`🕰️ Activated: ${chosenEffect}`);
+  }
+
+  activateDiplomacyAI() {
+    console.log("🤝 AI Diplomacy Module Enabled. Engaging in negotiation strategies.");
+    const negotiationOutcomes = ["Peace Agreement", "Tactical Deception", "Economic Takeover"];
+    const chosenOutcome = negotiationOutcomes[Math.floor(Math.random() * negotiationOutcomes.length)];
+    console.log(`📜 Outcome: ${chosenOutcome}`);
+  }
 }
 
 // Deploying the robot fleet
@@ -123,3 +139,6 @@ robots[2].enableSwarmIntelligence();
 robots[3].activateStealthTech();
 robots[4].prepareForSpaceTravel();
 robots[5].activateSelfCustomization();
+robots[6].enableSentience();
+robots[7].manipulateTime();
+robots[8].activateDiplomacyAI();
