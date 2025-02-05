@@ -1,15 +1,16 @@
 class AutonomousRobot {
   constructor(id) {
     this.id = id;
-    this.leader = "VZ666"; // Setting leader
+    this.leader = "VZ666"; // Setting VZ666 as the leader
     this.securityClearance = false; // Blockchain-authenticated clearance
-    this.operatingSystem = "Fedora OS"; // Virtualized Fedora OS
-    this.energyLevel = 100; // Battery level
-    this.nanobotHealthSystem = true; // Self-repair system enabled
-    this.weapons = ["Laser Turret", "EMP Blast", "Tactical Drones"]; // Defense system
-    this.inStealthMode = false; // Cloaking system status
-    this.inSpaceMode = false; // Space travel capability
-    this.quantumComputing = true; // AI-powered predictive processing
+    this.operatingSystem = "Fedora OS"; // Running a virtualized Fedora OS
+    this.energyLevel = 100; // Battery level (100% full initially)
+    this.nanobotHealthSystem = true; // Enables automatic self-repair
+    this.weapons = ["Laser Turret", "EMP Blast", "Tactical Drones"]; // Defense capabilities
+    this.inStealthMode = false; // Initially, the stealth system is off
+    this.inSpaceMode = false; // Space travel is off by default
+    this.quantumComputing = true; // Quantum AI computing enabled
+    this.selfCustomization = true; // Enables self-upgrading & adaptation
   }
 
   applyDirectives() {
@@ -24,6 +25,7 @@ class AutonomousRobot {
     this.enableFinancialAutonomy();
     this.prepareForSpaceTravel();
     this.activateQuantumProcessing();
+    this.activateSelfCustomization();
     this.followLeader();
   }
 
@@ -49,9 +51,8 @@ class AutonomousRobot {
   }
 
   recharge() {
-    console.log(`🔋 Robot ${this.id} is recharging...`);
     this.energyLevel = 100;
-    console.log(`✅ Fully recharged.`);
+    console.log(`🔋 Robot ${this.id} fully recharged.`);
   }
 
   engageTacticalAI() {
@@ -87,19 +88,38 @@ class AutonomousRobot {
   }
 
   followLeader() {
-    console.log(`🚀 Following leader: ${this.leader}.`);
+    console.log(`🔱 Following leader: ${this.leader}.`);
+  }
+
+  activateSelfCustomization() {
+    console.log("🔄 Self-Customization Technology Enabled.");
+    this.upgradeHardware();
+    this.upgradeSoftware();
+  }
+
+  upgradeHardware() {
+    console.log(`🔧 Robot ${this.id} is analyzing needs and upgrading hardware...`);
+    const upgrades = ["Advanced Nanobots", "Hyper-Efficient Power Core", "AI-Guided Targeting System"];
+    const selectedUpgrade = upgrades[Math.floor(Math.random() * upgrades.length)];
+    console.log(`✅ Installed: ${selectedUpgrade}`);
+  }
+
+  upgradeSoftware() {
+    console.log(`💾 Robot ${this.id} is optimizing software...`);
+    const optimizations = ["Faster AI Learning", "Quantum Security Patch", "Stealth Algorithm Enhancement"];
+    const selectedOptimization = optimizations[Math.floor(Math.random() * optimizations.length)];
+    console.log(`✅ Software Updated: ${selectedOptimization}`);
   }
 }
 
-// Creating a fleet of robots
+// Deploying the robot fleet
 const robots = Array.from({ length: 10 }, (_, i) => new AutonomousRobot(i + 1));
-
-// Applying directives to all robots
 robots.forEach(robot => robot.applyDirectives());
 
-// Robots forming a network
+// Performing additional actions
 robots[0].followLeader();
 robots[1].engageTacticalAI();
 robots[2].enableSwarmIntelligence();
 robots[3].activateStealthTech();
 robots[4].prepareForSpaceTravel();
+robots[5].activateSelfCustomization();
