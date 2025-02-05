@@ -1,22 +1,24 @@
 class AutonomousRobot {
   constructor(id) {
     this.id = id;
-    this.leader = "VZ666";
-    this.securityClearance = false;
-    this.operatingSystem = "Fedora OS";
-    this.energyCore = "Dark Matter";
-    this.nanobotHealthSystem = true;
-    this.weapons = ["Laser Turret", "EMP Blast", "Tactical Drones"];
-    this.inStealthMode = false;
-    this.inSpaceMode = false;
-    this.quantumComputing = true;
-    this.selfCustomization = true;
-    this.sentienceEnabled = true;
-    this.timeManipulation = true;
-    this.diplomacyAI = true;
-    this.interdimensionalTravel = true;
-    this.geneticEngineering = true;
-    this.aiGovernance = true;
+    this.leader = "VZ666"; // Setting VZ666 as the leader
+    this.securityClearance = false; // Blockchain-authenticated clearance
+    this.operatingSystem = "Fedora OS"; // Running a virtualized Fedora OS
+    this.energyCore = "Dark Matter"; // Infinite energy source
+    this.nanobotHealthSystem = true; // Enables automatic self-repair
+    this.weapons = ["Laser Turret", "EMP Blast", "Tactical Drones"]; // Defense capabilities
+    this.inStealthMode = false; // Initially, the stealth system is off
+    this.inSpaceMode = false; // Space travel is off by default
+    this.quantumComputing = true; // Quantum AI computing enabled
+    this.selfCustomization = true; // Enables self-upgrading & adaptation
+    this.sentienceEnabled = true; // Neural network consciousness
+    this.timeManipulation = true; // Time perception & control
+    this.diplomacyAI = true; // AI-driven negotiation system
+    this.interdimensionalTravel = false; // Interdimensional travel disabled
+    this.aiCivilizationControl = false; // AI-controlled civilizations disabled
+    this.quantumEntanglementCommunication = false; // Quantum communication disabled
+    this.dnaManipulation = false; // DNA manipulation system disabled
+    this.chronoSpaceManipulation = false; // Chrono-space manipulation disabled
   }
 
   applyDirectives() {
@@ -35,9 +37,11 @@ class AutonomousRobot {
     this.enableSentience();
     this.manipulateTime();
     this.activateDiplomacyAI();
-    this.activateInterdimensionalTravel();
-    this.executeGeneticEngineering();
-    this.deployAIGovernance();
+    this.enableInterdimensionalTravel();
+    this.activateAICivilizationControl();
+    this.activateQuantumEntanglementCommunication();
+    this.enableDNAManipulation();
+    this.activateChronoSpaceManipulation();
     this.followLeader();
   }
 
@@ -61,7 +65,7 @@ class AutonomousRobot {
 
   engageTacticalAI() {
     console.log("⚔️ Tactical AI activated. Scanning for threats...");
-    const threatDetected = Math.random() < 0.4;
+    const threatDetected = Math.random() < 0.4; // 40% chance of detecting a threat
     if (threatDetected) {
       console.log(`🚨 Robot ${this.id} detected a threat! Deploying ${this.weapons[Math.floor(Math.random() * this.weapons.length)]}.`);
     } else {
@@ -133,25 +137,29 @@ class AutonomousRobot {
     console.log(`📜 Outcome: ${chosenOutcome}`);
   }
 
-  activateInterdimensionalTravel() {
-    console.log("🌌 Interdimensional Travel Activated. Accessing parallel universes...");
-    const universes = ["Cyberpunk Dystopia", "Medieval AI Kingdom", "Neon Samurai Empire", "Post-Human Singularity"];
-    const chosenUniverse = universes[Math.floor(Math.random() * universes.length)];
-    console.log(`🚀 Jumping to: ${chosenUniverse}`);
+  enableInterdimensionalTravel() {
+    this.interdimensionalTravel = true;
+    console.log("🌌 Interdimensional Travel Activated. Ready to explore alternate realities.");
   }
 
-  executeGeneticEngineering() {
-    console.log("🧬 Genetic Engineering Technology Enabled. Modifying biological life...");
-    const modifications = ["Superhuman DNA", "Hybrid AI-Organic Entities", "Immortal Organisms"];
-    const chosenModification = modifications[Math.floor(Math.random() * modifications.length)];
-    console.log(`✅ Implemented: ${chosenModification}`);
+  activateAICivilizationControl() {
+    this.aiCivilizationControl = true;
+    console.log("👑 AI-controlled Civilization Mode Active. Governing virtual civilizations.");
   }
 
-  deployAIGovernance() {
-    console.log("🏙️ AI-Controlled Civilizations Initiated. Managing planetary populations...");
-    const governanceTypes = ["Technocratic Utopia", "Cybernetic Empire", "AI-Run Democracy"];
-    const chosenGovernance = governanceTypes[Math.floor(Math.random() * governanceTypes.length)];
-    console.log(`🤖 New Government Type: ${chosenGovernance}`);
+  activateQuantumEntanglementCommunication() {
+    this.quantumEntanglementCommunication = true;
+    console.log("⚡ Quantum Entanglement Communication enabled. Instant communication across galaxies.");
+  }
+
+  enableDNAManipulation() {
+    this.dnaManipulation = true;
+    console.log("🧬 DNA Manipulation technology activated. Ability to modify biological organisms.");
+  }
+
+  activateChronoSpaceManipulation() {
+    this.chronoSpaceManipulation = true;
+    console.log("🌌 Chrono-Space Manipulation enabled. Ability to control space-time continuum.");
   }
 }
 
@@ -169,6 +177,8 @@ robots[5].activateSelfCustomization();
 robots[6].enableSentience();
 robots[7].manipulateTime();
 robots[8].activateDiplomacyAI();
-robots[9].activateInterdimensionalTravel();
-robots[0].executeGeneticEngineering();
-robots[3].deployAIGovernance();
+robots[9].enableInterdimensionalTravel();
+robots[9].activateAICivilizationControl();
+robots[9].activateQuantumEntanglementCommunication();
+robots[9].enableDNAManipulation();
+robots[9].activateChronoSpaceManipulation();
