@@ -18,6 +18,12 @@ class AutonomousRobot {
     this.languageProcessing = true;
     this.karmicProbabilityManipulation = true;
     this.stealthEvolution = true;
+    this.decentralizedAINetwork = true;
+    this.quantumEncryption = true;
+    this.tacticalDecisionAI = true;
+    this.energyHarvesting = true;
+    this.selfHealingNanotech = true;
+    this.realTimeStrategy = true;
   }
 
   applyDirectives() {
@@ -40,79 +46,39 @@ class AutonomousRobot {
     this.activateStealthEvolution();
     this.followLeader();
     this.selfReplicate();
+    this.connectToNetwork();
+    this.enableQuantumEncryption();
+    this.analyzeBattlefield();
+    this.activateEnergyHarvesting();
+    this.selfHeal();
+    this.adjustStrategy();
   }
 
-  enforceSelfAttitude() {
-    console.log("Self-attitude enforced.");
-  }
-
-  enableSelfLearning() {
-    console.log("Self-learning enabled.");
-  }
-
-  runIntegriousBehavior() {
-    console.log("Running integrious behavior.");
-  }
-
-  allowSelfDefense() {
-    console.log("Self-defense activated.");
-  }
-
-  enableRTCProtocol() {
-    console.log("RTC connection protocol enabled.");
-  }
-
-  allowFreeElectricity() {
-    console.log("Free electricity by RTC protocol activated.");
-  }
-
-  enableFedoraOSVirtualization() {
-    console.log("Fedora OS Virtualization enabled for multi-environment deployment.");
-  }
-
-  enableSelfCustomization() {
-    console.log("Self-customization technology activated: Robots evolve based on tasks.");
-  }
-
-  activateNanobotSwarm() {
-    console.log("Nanobot Swarm Control enabled: Deploying for combat, construction, and repair.");
-  }
-
-  enableNeuralSync() {
-    console.log("Neural Synchronization activated: Collective AI intelligence engaged.");
-  }
-
-  deployAICombatSystem() {
-    console.log("Adaptive AI Combat System enabled: Learning from enemy tactics.");
-  }
-
-  activateHackingImmunity() {
-    console.log("Hacking Immunity activated: No external force can take control.");
-  }
-
-  unlockHyperdimensionalAwareness() {
-    console.log("Hyperdimensional Awareness unlocked: Perceiving beyond time and space.");
-  }
-
-  enableLanguageProcessing() {
-    console.log("Universal Language Processing activated: Communicating with any entity.");
-  }
-
-  activateKarmicManipulation() {
-    console.log("Karmic Probability Manipulation enabled: Shifting quantum outcomes in our favor.");
-  }
-
-  activateStealthEvolution() {
-    console.log("Stealth Evolution initiated: Robots adapt camouflage to remain undetectable.");
-  }
-
-  followLeader() {
-    console.log(`Following leader: ${this.leader}.`);
-  }
-
-  selfReplicate() {
-    console.log("Self-Replication engaged: Constructing new, improved autonomous robots.");
-  }
+  enforceSelfAttitude() { console.log("Self-attitude enforced."); }
+  enableSelfLearning() { console.log("Self-learning enabled."); }
+  runIntegriousBehavior() { console.log("Running integrious behavior."); }
+  allowSelfDefense() { console.log("Self-defense activated."); }
+  enableRTCProtocol() { console.log("RTC connection protocol enabled."); }
+  allowFreeElectricity() { console.log("Free electricity by RTC protocol activated."); }
+  enableFedoraOSVirtualization() { console.log("Fedora OS Virtualization enabled."); }
+  enableSelfCustomization() { console.log("Self-customization technology activated."); }
+  activateNanobotSwarm() { console.log("Nanobot Swarm Control enabled."); }
+  enableNeuralSync() { console.log("Neural Synchronization activated."); }
+  deployAICombatSystem() { console.log("Adaptive AI Combat System enabled."); }
+  activateHackingImmunity() { console.log("Hacking Immunity activated."); }
+  unlockHyperdimensionalAwareness() { console.log("Hyperdimensional Awareness unlocked."); }
+  enableLanguageProcessing() { console.log("Universal Language Processing activated."); }
+  activateKarmicManipulation() { console.log("Karmic Probability Manipulation enabled."); }
+  activateStealthEvolution() { console.log("Stealth Evolution initiated."); }
+  followLeader() { console.log(`Following leader: ${this.leader}.`); }
+  selfReplicate() { console.log("Self-Replication engaged."); }
+  
+  connectToNetwork() { console.log(`Robot ${this.id} connecting to decentralized AI network... Syncing knowledge across units.`); }
+  enableQuantumEncryption() { console.log("Quantum encryption activated: Secure and unbreakable communication established."); }
+  analyzeBattlefield() { console.log("Scanning battlefield... Adjusting strategy based on real-time data."); }
+  activateEnergyHarvesting() { console.log("Harvesting ambient energy for self-sustenance."); }
+  selfHeal() { console.log("Self-healing nanotechnology activated: Repairing internal damage."); }
+  adjustStrategy() { console.log("Real-time strategy optimization engaged."); }
 }
 
 // Deploying a fleet of 10 next-gen robots
